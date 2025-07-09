@@ -1,6 +1,6 @@
 class ProductPage {
     addFirstProductToCart() {
-        cy.contains('Samsung galaxy s6').click();
+        cy.contains('Iphone 6 32gb').click();
         cy.contains('Add to cart').click();
         cy.on('window:alert', (str) => {
             expect(str).to.equal('Product added');
@@ -15,8 +15,8 @@ class ProductPage {
         cy.contains('Place Order').click();
         cy.get('#name').type('Tester');
         cy.get('#country').type('Indonesia');
-        cy.get('#city').type('Jakarta');
-        cy.get('#card').type('1234567890123456');
+        cy.get('#city').type('Jakarta Timur');
+        cy.get('#card').type('0817171638');
         cy.get('#month').type('07');
         cy.get('#year').type('2025');
         cy.contains('Purchase').click();
