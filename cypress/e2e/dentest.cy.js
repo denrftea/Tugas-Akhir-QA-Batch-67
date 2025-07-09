@@ -16,7 +16,7 @@ describe('Demoblaze Automation Test Flow', () => {
 
     it('Sign up a new user successfully', () => {
         signupPage.clickSignupLink();
-        cy.wait(1000); // wait for modal
+        cy.wait(1000); 
         signupPage.enterUsername(username);
         signupPage.enterPassword(password);
         signupPage.clickSignupButton();
@@ -27,7 +27,7 @@ describe('Demoblaze Automation Test Flow', () => {
 
     it('Login with the newly created user', () => {
         loginPage.clickLoginLink();
-        cy.wait(1000); // wait for modal
+        cy.wait(1000); 
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
         loginPage.clickLoginButton();
