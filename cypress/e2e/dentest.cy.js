@@ -7,8 +7,8 @@ const loginPage = new LoginPage();
 const productPage = new ProductPage();
 
 describe('Demoblaze Automation Test Flow', () => {
-    const username = 'user' + Date.now();
-    const password = 'pass123';
+    const username = 'denrftea';
+    const password = '123456abc';
 
     beforeEach(() => {
         cy.visit('https://www.demoblaze.com/index.html');
